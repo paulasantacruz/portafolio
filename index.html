@@ -1,49 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portafolio</title>
+    <title>Mi Portafolio</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Archivo de estilos personalizados -->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="favorito.icono" type="imagen/x-icon">
 </head>
 
 <body>
-    <header class="header">
-        <nav class="header__navegador">
-            <a href="yo.html" target="_blank">yo</a>
-            <a href="estudios.html" target="_blank">estudios</a>
-            <a href="contacto.html" target="_blank">contacto</a>
-        </nav>
+    <!-- Imagen de fondo -->
+    <div class="background-image"></div>
 
-    </header>
-    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Mi Portafolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#sobre-mi">Sobre Mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#proyectos">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#habilidades">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección Sobre Mí -->
+    <section id="sobre-mi" class="py-5 text-light">
+        <div class="container text-center">
+            <h2 class="mb-4">Sobre Mí</h2>
+            <p>Soy maria paula santacruz tengo 20 años de edad , desarrolladora web apasionado por crear aplicaciones funcionales y elegantes para la comodidad de la comunidad.</p>
+        </div>
+    </section>
+
+<!-- Sección Proyectos -->
+<section id="proyectos" class="py-5 text-light bg-secondary">
     <div class="container">
-        <center><h1 class="logo">mi portafolio </h1></center>
-    <section> 
-        
-        <center><img class="imagen" src="img/descarga.jpeg" alt="descarga.jpeg" width="400"></center>
-    </section>
-        <h2 class="central_tex">Sobre Mí</h2>
-        <article class="border">        <h1 class="central_tex">Hola, soy paula ,Lorem ipsum dolor sit amet, consectetur
-            adipisicing elit. Porro repudiandae nesciunt odit inventore,
-            voluptate ratione distinctio dignissimos cumque molestias! 
-            Quas dignissimos nesciunt blanditiis est, esse exercitationem 
-            quis perspiciatis molestias aspernatur Lorem ipsum dolor sit 
-            amet consectetur adipisicing elit. Sequi facere eaque ducimus
-            eum eligendi iure, hic assumenda porro debitis repellendus nisi ab
-                ipsum magnam libero minima deserunt voluptatibus consectetur reiciendis.?.</h1></article>
+        <h2 class="text-center mb-4">Proyectos</h2>
+        <div class="row">
+            <!-- Proyecto 1 -->
+            <div class="col-md-4">
+                <div class="card bg-dark text-white mb-4">
+                    <img src="img/noche.jpg" class="card-img-top" alt="Proyecto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Proyecto 1</h5>
+                        <p class="card-text">horTitech es un software que permite el control remoto y automatizado del encendido y apagado de luces y sistemas de riego, optimizando el uso de recursos en entornos agrícolas y residenciales. Su objetivo es facilitar la gestión eficiente del consumo de energía y agua</p>
+                        <a href="proyecto1.html" class="btn btn-light" target="_blank">Ver Proyecto</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Proyecto 2 -->
+            <div class="col-md-4">
+                <div class="card bg-dark text-white mb-4">
+                    <img src="img/noche.jpg" class="card-img-top" alt="Proyecto 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Proyecto 2</h5>
+                        <p class="card-text">El servicio de mantenimiento de equipos se enfoca en asegurar el funcionamiento óptimo y prolongar la vida útil de diversas maquinarias y dispositivos. Este incluye la inspección, reparación y sustitución de piezas, así como la limpieza y calibración de equipos. Mediante un enfoque preventivo y correctivo, se busca minimizar tiempos de inactividad, maximizar la eficiencia operativa y garantizar la seguridad en el 
+                            uso de los equipos, contribuyendo así a un rendimiento confiable y duradero..</p>
+                        <a href="proyecto2.html" class="btn btn-light" target="_blank">Ver Proyecto</a>
+                    </div>
+                </div>
+            </div>
+            
+</section>
 
-    </div>
-    </header>
-    </section>
-    <main>
-    
-    </main>
-    <footer>
 
+    <!-- Sección Habilidades -->
+    <section id="habilidades" class="py-5 text-light bg-dark">
+        <div class="container text-center">
+            <h2 class="mb-4">Habilidades</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <i class="bi bi-code-slash display-4"></i>
+                    <h5>HTML</h5>
+                </div>
+                <div class="col-md-3">
+                    <i class="bi bi-bootstrap display-4"></i>
+                    <h5>Bootstrap</h5>
+                </div>
+                <div class="col-md-3">
+                    <i class="bi bi-file-earmark-code display-4"></i>
+                    <h5>JavaScript</h5>
+                </div>
+                <div class="col-md-3">
+                    <i class="bi bi-database display-4"></i>
+                    <h5>SQL</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="py-5 text-light bg-secondary">
+        <div class="container text-center">
+            <h2 class="mb-4">Contacto</h2>
+            <form>
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" id="email" placeholder="Email">
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" id="mensaje" rows="3" placeholder="Mensaje"></textarea>
+                </div>
+                <button type="submit" class="btn btn-dark">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-3">
+        <div class="container text-center">
+            <p>&copy; 2024 Mi Portafolio - Todos los derechos reservados.</p>
+        </div>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

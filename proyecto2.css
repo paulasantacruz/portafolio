@@ -1,0 +1,69 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0e0505; /* Suave tono gris */
+    color: #0c0101; /* Gris oscuro para el texto */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fdfdfd; /* Blanco suave */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(26, 1, 1, 0.925); /* Sombra ligera */
+    border: 1px solid #ddd; /* Borde gris claro */
+}
+
+/* Título del proyecto */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333; /* Gris oscuro para un buen contraste */
+    text-align: center;
+    border-bottom: 2px solid #ccc; /* Línea debajo del título */
+    padding-bottom: 10px;
+}
+
+/* Párrafo */
+p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify;
+    color: #555; /* Gris intermedio */
+}
+
+/* Imagen del proyecto */
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(7, 2, 2, 0.877); /* Sombra para destacar la imagen */
+}
+
+/* Media Queries - Responsividad */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+}
